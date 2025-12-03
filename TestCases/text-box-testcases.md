@@ -1,7 +1,7 @@
 # Testfälle – DemoQA Text Box
 
 Getestete Seite: https://demoqa.com/text-box  
-Dieses Dokument enthält 10 grundlegende Testfälle für das Text Box Formular.
+Testdatum: 04.12.2025
 
 ---
 
@@ -10,97 +10,106 @@ Dieses Dokument enthält 10 grundlegende Testfälle für das Text Box Formular.
 **Testschritte:**  
 1. „Atilla Test“ in das Feld „Full Name“ eingeben  
 2. Auf „Submit“ klicken  
-**Erwartetes Ergebnis:**  
-Der Name erscheint korrekt im Output-Bereich.
+**Erwartetes Ergebnis:** Name erscheint korrekt im Output-Bereich.  
+**Ist-Ergebnis:** Name wird korrekt angezeigt.  
+**Status:** PASS
 
 ---
 
 ## TC02 – Full Name leer lassen
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
 1. „Full Name“ leer lassen  
 2. Submit klicken  
-**Erwartetes Ergebnis:**  
-Output zeigt keinen Namen an (oder Feld bleibt leer).
+**Erwartetes Ergebnis:** Output zeigt keinen Namen an.  
+**Ist-Ergebnis:** Kein Name wird angezeigt.  
+**Status:** PASS
 
 ---
 
 ## TC03 – Ungültige Email eingeben
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
-1. „test123“ in das Feld „Email“ eingeben  
+1. „test123“ in das Emailfeld eingeben  
 2. Submit klicken  
-**Erwartetes Ergebnis:**  
-Das Emailfeld wird rot markiert (Fehlermarkierung).
+**Erwartetes Ergebnis:** Emailfeld wird rot markiert.  
+**Ist-Ergebnis:** Emailfeld wird rot markiert.  
+**Status:** PASS
 
 ---
 
 ## TC04 – Gültige Email eingeben
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
-1. „test@mail.com“ in das Email-Feld eintragen  
-2. Submit klicken  
-**Erwartetes Ergebnis:**  
-Die Email erscheint korrekt im Output-Bereich.
+1. „test@mail.com“ eingeben  
+2. Submit  
+**Erwartetes Ergebnis:** Email wird korrekt angezeigt.  
+**Ist-Ergebnis:** Email wird korrekt angezeigt.  
+**Status:** PASS
 
 ---
 
 ## TC05 – Lange Adresse (300 Zeichen) eingeben
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
-1. 300 Zeichen in „Current Address“ eintragen  
-2. Submit klicken  
-**Erwartetes Ergebnis:**  
-Die Adresse wird vollständig im Output angezeigt.
+1. 300 Zeichen in „Current Address“ eingeben  
+2. Submit  
+**Erwartetes Ergebnis:** Adresse wird vollständig angezeigt.  
+**Ist-Ergebnis:** Anzeige ist fehlerhaft / nicht sauber (siehe Bugreport BR-01).  
+**Status:** FAIL
 
 ---
 
 ## TC06 – Current Address leer lassen
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
-1. Feld „Current Address“ leer lassen  
+1. Feld leer lassen  
 2. Submit  
-**Erwartetes Ergebnis:**  
-Keine Adresse wird im Output angezeigt.
+**Erwartetes Ergebnis:** Keine Adresse wird angezeigt.  
+**Ist-Ergebnis:** Keine Adresse wird angezeigt.  
+**Status:** PASS
 
 ---
 
 ## TC07 – Submit ohne Eingaben
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
 1. Alle Felder leer lassen  
-2. Submit klicken  
-**Erwartetes Ergebnis:**  
-Output zeigt alle Felder leer an.
+2. Submit  
+**Erwartetes Ergebnis:** Output zeigt leere Werte.  
+**Ist-Ergebnis:** Output zeigt leere Werte.  
+**Status:** PASS
 
 ---
 
 ## TC08 – Current Address & Permanent Address gleich setzen
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
-1. „Hallo Welt“ in Current Address eintragen  
-2. „Hallo Welt“ in Permanent Address eintragen  
+1. „Hallo Welt“ in Current Address  
+2. „Hallo Welt“ in Permanent Address  
 3. Submit  
-**Erwartetes Ergebnis:**  
-Beide Adressen erscheinen identisch im Output.
+**Erwartetes Ergebnis:** Beide Adressen erscheinen identisch.  
+**Ist-Ergebnis:** Beide Adressen erscheinen identisch.  
+**Status:** PASS
 
 ---
 
 ## TC09 – Sonderzeichen im Namen
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
 1. „Atilla @#!“ eingeben  
 2. Submit  
-**Erwartetes Ergebnis:**  
-System akzeptiert Eingabe oder zeigt ggf. Validierung an.
+**Erwartetes Ergebnis:** System akzeptiert Eingabe.  
+**Ist-Ergebnis:** System akzeptiert Eingabe.  
+**Status:** PASS
 
 ---
 
 ## TC10 – Extrem lange Eingaben in allen Feldern
-**Vorbedingungen:** Seite ist geöffnet  
+**Vorbedingungen:** Seite geöffnet  
 **Testschritte:**  
 1. In alle Felder 300–500 Zeichen eingeben  
 2. Submit  
-**Erwartetes Ergebnis:**  
-Formular verarbeitet alle Eingaben ohne Absturz, Output zeigt Daten.
-
+**Erwartetes Ergebnis:** Formular verarbeitet alles ohne Probleme.  
+**Ist-Ergebnis:** Seite friert ein / Browser meldet „Diese Seite antwortet nicht“ (siehe Bugreport BR-02).  
+**Status:** FAIL
