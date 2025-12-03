@@ -24,3 +24,4 @@ Der Text wird im Output-Bereich optisch nicht sauber dargestellt (überlappend).
 
 ## Screenshot
 (Screenshot als Datei im Ordner `Screenshots/` speichern und hier referenzieren.)
+https://github.com/Atilla-Oez-QAEngineer/WebTesting-Demo/blob/a47445e4c39b6d00c65851a44312211c81303b53/Screenshots/TC05-long-address-output.png
