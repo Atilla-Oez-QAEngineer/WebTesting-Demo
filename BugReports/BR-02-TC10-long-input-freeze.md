@@ -22,4 +22,4 @@ Die Seite sollte die Eingaben stabil verarbeiten, das Formular absenden und den 
 Die Seite hängt / reagiert nicht mehr und der Browser zeigt ein Pop-up wie „Diese Seite antwortet nicht“ (z. B. in Chrome).
 
 ## Screenshot
-(Screenshot von der Fehlermeldung im Ordner `Screenshots/` speichern und hier referenzieren.)
+[(Screenshot von der Fehlermeldung im Ordner `Screenshots/` speichern und hier referenzieren.)](https://github.com/Atilla-Oez-QAEngineer/WebTesting-Demo/blob/b38f10a913188d713f812e3af058ff887ab69e3c/Screenshots/TC10-page-freeze.png)
