@@ -8,6 +8,6 @@ Dieses Repository enthält ein manuelles Web-Testprojekt.
 - **BugReports/** – Dokumentierte Bugs mit Reproduktionsschritten
 - **Screenshots/** – Screenshots zur Unterstützung von Bugreports und Testfällen
 
-Getestete Beispielseiten (werden in den nächsten Tagen ergänzt):
+Getestete Beispielseiten
 - https://demoqa.com
 - https://practicetestautomation.com
