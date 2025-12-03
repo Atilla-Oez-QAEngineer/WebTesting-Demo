@@ -10,4 +10,3 @@ Dieses Repository enthält ein manuelles Web-Testprojekt.
 
 Getestete Beispielseiten
 - https://demoqa.com
-- https://practicetestautomation.com
